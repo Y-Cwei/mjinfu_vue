@@ -43,9 +43,6 @@ export default {
 }
 </script>
 <style lang="less">
-  body{
-    background-color: #f3f3f3;
-  }
   .own_h{
     width: 100%;
     background: #000;

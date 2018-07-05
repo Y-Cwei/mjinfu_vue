@@ -174,7 +174,7 @@ export default {
 </script>
 <style lang="less">
   body{
-    background-color: #fff!important;
+    background-color: #f3f3f3;
   }
   .b_img{
     width: 100%;
@@ -198,6 +198,7 @@ export default {
     padding-left: .3rem;
     border-bottom: 1px solid #f3f3f3;
     transition: all 0.5s linear;
+    background-color: #fff;
     .anim{
       transition: all 0.5s linear;
       margin-top: -0.7rem;
@@ -395,7 +396,7 @@ export default {
   /*财行优选*/
   .bid_det{
     padding: 0.1rem 0 0;
-    &.bid_wd{margin-bottom: 1.2rem}
+    &.bid_wd{padding-bottom: 1.2rem}
     .bid_ul_con{
       &>li{
         padding: 0.3rem 0.4rem;

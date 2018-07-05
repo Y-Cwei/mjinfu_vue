@@ -153,6 +153,7 @@ export default {
   }
   .mint-tab-container{
     padding: 0.8rem 0 1.2rem;
+    background-color: #fff;
     .mint-tab-container-item{
       position: relative;
       padding-bottom: 1rem;
