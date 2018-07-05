@@ -25,7 +25,7 @@
       <mt-cell title="帮助中心" to="//github.com" is-link class="scale-1px"></mt-cell>
       <mt-cell title="在线客服" to="//github.com" is-link class="scale-1px"></mt-cell>
     </div>
-    <mt-cell title="退出" class="log_out"></mt-cell>
+    <div class="log_out" @click="logOut">退出</div>
     <jf-footer :select="select"></jf-footer>
   </div>
 </template>
@@ -35,6 +35,17 @@ export default {
   data () {
     return {
       select: '账户中心'
+    }
+  },
+  created () {
+    if (!localStorage.getItem('PHONE_NUMBER')) {
+      this.$router.push('/login')
+    }
+  },
+  methods: {
+    logOut () {
+      localStorage.removeItem('PHONE_NUMBER')
+      this.$router.push('/home')
     }
   },
   components: {
@@ -110,6 +121,7 @@ export default {
   .cell_con{
     width: 100%;
     margin-top: 0.2rem;
+    background-color: #fff;
     .mint-cell-wrapper{
       height: 1rem;
       line-height: 1rem;
@@ -122,13 +134,11 @@ export default {
   }
   .log_out{
     margin: 0.3rem 0 1.2rem;
-    .mint-cell-text{
-      display: block;
-      text-align: center;
-      height: 1rem;
-      line-height: 1rem;
-      font-size: 0.3rem;
-      color: #3E3E3E;
-    }
+    text-align: center;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.3rem;
+    color: #3E3E3E;
+    background-color: #fff;
   }
 </style>

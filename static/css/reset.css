@@ -64,12 +64,12 @@ table {
 a:link, a:visited{
     text-decoration: none;
 }
-
 .wrapper{
     width: 1200px;
     min-width: 1200px;
     margin: 0 auto;
 }
+html, body{height:100%}
 body{
     background-color: #f3f3f3;
 }
@@ -90,7 +90,7 @@ a:link,
 a:active,
 a:visited,
 a:hover {
-    background: #fff;
+    background: transparent;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
 }

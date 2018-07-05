@@ -1,6 +1,6 @@
 <template>
   <mt-tabbar v-model="selected" fixed>
-    <mt-tab-item v-for="address in addresses" :id="address.name" :key="address.name" @click="select(address.name)">
+    <mt-tab-item v-for="address in addresses" :id="address.name" :key="address.name">
       <img slot="icon" :src="address.imgSrc">
       {{address.name}}
     </mt-tab-item>

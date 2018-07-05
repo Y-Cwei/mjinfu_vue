@@ -151,7 +151,7 @@ export default {
       }
     }
   }
-  .mint-tab-container{
+  .mint-tab-container.bid_ch{
     padding: 0.8rem 0 1.2rem;
     background-color: #fff;
     .mint-tab-container-item{

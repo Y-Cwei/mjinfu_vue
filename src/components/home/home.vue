@@ -173,9 +173,6 @@ export default {
 }
 </script>
 <style lang="less">
-  body{
-    background-color: #f3f3f3;
-  }
   .b_img{
     width: 100%;
     height: 4.18rem;

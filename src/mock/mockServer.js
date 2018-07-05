@@ -40,3 +40,7 @@ Mock.mock('/apich/gyljr', {
   status: '1', // 供应链金融
   data: data.chList.gyljr
 })
+Mock.mock('/api/login', {
+  status: '1', // 登录
+  data: data.login
+})
