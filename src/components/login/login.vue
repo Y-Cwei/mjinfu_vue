@@ -67,7 +67,7 @@ export default {
     checkPhone (phoneNumber) {
       var phoneRge = /^1[3|4|5|6|7|8][0-9]{9}$/
       if (phoneNumber && (phoneNumber.slice(0, 1) !== '1')) {
-        Toast('手机号格式不正确qqqqq')
+        Toast('手机号格式不正确')
         this.login_username = phoneNumber.slice(0, 1)
         return false
       } else if (phoneNumber.length === 11) {
